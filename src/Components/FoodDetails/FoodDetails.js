@@ -14,7 +14,7 @@ const FoodDetails = (props) => {
     const [isSuccess, setIsSuccess] = useState(false);
     const [preloaderVisibility, setPreloaderVisibility] = useState("block");
     useEffect(() => {
-        fetch("https://red-onion-mongo.herokuapp.com/food/"+ id)
+        fetch("https://red-onion-mongo.herokuapp.com/food/"+id)
         .then(res=>res.json())
         .then(data => {
             setCurrentFood(data);

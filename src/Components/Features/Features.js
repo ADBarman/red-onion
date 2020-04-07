@@ -16,7 +16,7 @@ function Features(props) {
                 setPreloaderVisibility("none");
             })
             .catch(err => console.log(err))
-    } ,[features.length])
+    }, [features.length])
         
     
 
